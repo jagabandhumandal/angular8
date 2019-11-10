@@ -1,0 +1,8 @@
+<div style="display: flex; border:1px solid black">
+    <div style="width:50%">Roll Number</div><div style="width:50%">Name</div>
+</div>
+<div  *ngFor="let hero of STUDENTS">
+    <div style="display: flex; border:1px solid black" (click)="onSelect(hero)">
+        <div style="width:50%">{{hero.id}}</div><div style="width:50%">{{hero.name}}</div>
+    </div>
+</div>
